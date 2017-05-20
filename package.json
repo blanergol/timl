@@ -1,0 +1,22 @@
+{
+    "name": "timl",
+    "version": "0.1.0",
+    "description": "TIML project",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/artgrosvil/timl"
+    },
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-cssmin": "latest",
+        "grunt-contrib-imagemin": "latest",
+        "grunt-contrib-watch": "latest",
+        "bootstrap": "4.0.0-alpha.6",
+        "jquery": "latest"
+    }
+}

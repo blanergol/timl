@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TIML Project (Beta)</title>
+
+    {% include "css.html" %}
+</head>
+
+<body>
+
+<div class="container">
+    {% include "nav.html" %}
+
+    <div class="jumbotron">
+        <h1 class="display-3">TIML Project
+            <small class="text-muted">beta</small>
+        </h1>
+        <p class="lead">Parser of sites, documents, pictures by keywords from search engines. Analysis of the received data. At the end,
+            brief theses. Search engines: Google, Yandex.</p>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-12">
+            <form id="search" action="search" method="post">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="query" placeholder="Search query">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lan" class="col-sm-1 col-form-label">Lan:</label>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="lan">
+                        <option value="en" selected>Eng</option>
+                        <option value="ru">Rus</option>
+                    </select>
+
+                    <label for="documents" class="col-sm-1 col-form-label">Doc:</label>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="documents">
+                        <option value="1">Yes</option>
+                        <option value="0" selected>No</option>
+                    </select>
+
+                    <label for="date" class="col-sm-1 col-form-label">Date:</label>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="date">
+                        <option value="week">Week</option>
+                        <option value="month">Month</option>
+                        <option value="all" selected>All</option>
+                    </select>
+
+                    <label for="links" class="col-sm-1 col-form-label">Links:</label>
+                    <input type="number" class="form-control col-sm-1" id="links" value="10">
+
+                    <label for="search_depth" class="col-sm-1 col-form-label">Deep:</label>
+                    <input type="number" class="form-control col-sm-1" id="search_depth" value="2">
+                </div>
+                <div class="form-group row">
+                    <button type="button" class="btn btn-primary btn-block" id="button-search">Send an inquiry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% include "footer.html" %}
+
+{% include "js.html" %}
+</body>
+
+</html>
