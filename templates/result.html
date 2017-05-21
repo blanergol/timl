@@ -21,19 +21,24 @@
         <div class="col-lg-12">
             <h2>Result search:</h2><br>
 
-            <p><span class="badge badge-primary">#</span> Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-                mollis interdum.
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Source</a></li>
-                <li class="list-inline-item"><a href="#">Documents</a></li>
-                <li class="list-inline-item"><a href="#">Images</a></li>
-            </ul>
-            </p>
+            {% for item in data %}
+                <p><span class="badge badge-primary">#</span>
+                    {% if item.text|length == 0 %}
+                        None text
+                    {% else %}
+                        {{ item.text }}
+                    {% endif %}
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="{{ item.url }}" target="_blank">Source</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Documents</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Images</a></li>
+                </ul>
+                </p>
+            {% endfor %}
         </div>
     </div>
 
 </div>
-{% include "footer.html" %}
 
 {% include "js.html" %}
 </body>
