@@ -10,5 +10,6 @@ Packages for frontend:
 
 Packages for backend:
 - pip3 install flask grab bs4
+
 Rebuild frontend:
 - grunt
