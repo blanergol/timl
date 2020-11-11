@@ -5,11 +5,4 @@ Search engines:
 - Google
 - Yandex.
 
-Packages for frontend:
-- npm install
-
-Packages for backend:
-- pip3 install flask grab bs4
-
-Rebuild frontend:
-- grunt
+![main page](docs/page.png)
